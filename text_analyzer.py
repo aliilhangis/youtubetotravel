@@ -5,7 +5,7 @@ def analyze_transcript(transcript):
     """
     Analyze video transcript using Google Gemini API to extract locations and landmarks.
     """
-    genai.configure(api_key=os.getenv("AIzaSyAHGevOsfDUchebvfihC1u7sWK8NMIOyqY"))
+    genai.configure(api_key=os.getenv("gemini_api_key"))
     model = genai.GenerativeModel('gemini-pro')
 
     prompt = f"""
